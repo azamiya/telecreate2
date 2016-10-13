@@ -33,6 +33,14 @@ app.get('/simpleVideoChat', function(req, res) {
     res.sendFile(__dirname + "/client/simpleVideoChat/index.html")
 });
 
+app.get('/cursorTransmitter', function(req, res) {
+    res.sendFile(__dirname + "/client/cursorTransmitter/index.html")
+});
+
+app.get('/10.360Controller', function(req, res) {
+    res.sendFile(__dirname + "/client/10.360Controller/index.html")
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
