@@ -12,7 +12,7 @@ window.onload = function(){
     acc[1] = e.y
     if(acc[0] > 0 && acc[0] < 180 && acc[1] > 0 && acc[1] < 180) {
         if(conn != null) conn.send(acc);
-        console.log(acc);
+        //console.log(acc);
       }
   });
   displayMyCamera();
