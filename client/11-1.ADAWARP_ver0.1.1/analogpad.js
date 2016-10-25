@@ -10,7 +10,7 @@ window.onload = function(){
     //console.log("analog1: ",e);
     acc[0] = e.x;
     acc[1] = e.y
-    if(acc[0] > 0 && acc[0] < 180 && acc[1] > 0 && acc[1] < 180) {
+    if(acc[0] > 30 && acc[0] < 150 && acc[1] > 30 && acc[1] < 150) {
         if(conn != null) conn.send(acc);
         //console.log(acc);
       }
