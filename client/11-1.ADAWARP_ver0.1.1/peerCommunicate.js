@@ -11,9 +11,9 @@ var myID;
 var partnerID;
 
 
-window.onload = function(){
-    displayMyCamera();
-}
+/*window.onload = function(){
+    console.log("hello camera");
+}*/
 
 function displayMyCamera(){
     navigator.getUserMedia({audio: true, video: true}, function(stream){
